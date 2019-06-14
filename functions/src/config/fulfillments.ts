@@ -1,7 +1,7 @@
 import {TYPES} from "../di/types";
 
 const fulfillmentTypes = [
-    TYPES.SillyNameFulfillment
+    TYPES.FindAirportFulfillment
 ];
 
 export { fulfillmentTypes }

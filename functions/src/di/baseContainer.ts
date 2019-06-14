@@ -9,9 +9,8 @@ import {NetworkRequest} from "../utils/network/NetworkRequest";
 import {FruitsStorage} from "../storages/fruits/FruitsStorage";
 import {FruitsLocalStorage} from "../storages/fruits/impl/FruitsLocalStorage";
 import {ConsoleLogger} from "../utils/log/impl/ConsoleLogger";
-import {FruitsFirebaseStorage} from "../storages/fruits/impl/FruitsFirebaseStorage";
-import {SillyNameManager} from "../managers/SillyNameManager";
-import {SillyNameFulfilment} from "../fulfillments/impl/SillyNameFulfilment";
+import {FindAirportFulfillment} from "../fulfillments/impl/FindAirportFulfillment";
+import {FindAirportManager} from "../managers/FindAirportManager";
 
 const baseContainer = new Container();
 
@@ -23,16 +22,16 @@ const baseContainer = new Container();
 /* MANAGERS                                                                                   */
 /**********************************************************************************************/
 
-baseContainer.bind<SillyNameManager>(TYPES.SillyNameManager)
-    .to(SillyNameManager)
+baseContainer.bind<FindAirportManager>(TYPES.FindAirportManager)
+    .to(FindAirportManager)
     .inSingletonScope();
 
 /**********************************************************************************************/
 /* FULFILLMENTS                                                                               */
 /**********************************************************************************************/
 
-baseContainer.bind<SillyNameFulfilment>(TYPES.SillyNameFulfillment)
-    .to(SillyNameFulfilment)
+baseContainer.bind<FindAirportFulfillment>(TYPES.FindAirportFulfillment)
+    .to(FindAirportFulfillment)
     .inSingletonScope();
 
 /**********************************************************************************************/

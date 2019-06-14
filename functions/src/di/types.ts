@@ -10,13 +10,13 @@ const TYPES = {
     /* MANAGERS                                                                                   */
     /**********************************************************************************************/
 
-    SillyNameManager: Symbol("SillyNameManager"),
+    FindAirportManager: Symbol("FindAirportManager"),
 
     /**********************************************************************************************/
     /* FULFILLMENTS                                                                               */
     /**********************************************************************************************/
 
-    SillyNameFulfillment: Symbol("SillyNameFulfillment"),
+    FindAirportFulfillment: Symbol("FindAirportFulfillment"),
 
     /**********************************************************************************************/
     /* STORAGES                                                                                   */
